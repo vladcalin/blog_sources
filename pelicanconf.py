@@ -3,9 +3,10 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Vlad Calin'
-SITENAME = 'Programming for change'
+SITENAME = 'Vlad\'s blog'
 SITEURL = ''
 SITELOGO = "/images/profile.jpg"
+SITEDESCRIPTION = "When every morning starts with a coffee and a hello world"
 
 PATH = 'content'
 
@@ -20,8 +21,14 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+MAIN_MENU = True
+
 # Blogroll
+MENUITEMS = (('Archives', '/archives.html'),
+             ('Categories', '/categories.html'),
+             ('Tags', '/tags.html'),)
 LINKS = ()
+
 
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/calinstefanvlad'),
