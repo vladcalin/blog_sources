@@ -1,5 +1,6 @@
-set PELICAN_BINARY=D:\Projects\_pelican\Scripts\pelican.exe
-set PYTHON_BINARY=D:\Projects\_pelican\Scripts\python.exe
+set PYTHON_VENV_SCRIPTS=D:\Projects\Python_venvs\vladcalin.github.io\Scripts
+set PELICAN_BINARY=%PYTHON_VENV_SCRIPTS%\pelican.exe
+set PYTHON_BINARY=%PYTHON_VENV_SCRIPTS%\python.exe
 
 %PELICAN_BINARY% content
 cd output
