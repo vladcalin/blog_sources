@@ -1,4 +1,4 @@
-set PYTHON_VENV_SCRIPTS=D:\Projects\Python_venvs\vladcalin.github.io\Scripts
+set PYTHON_VENV_SCRIPTS=D:\Projects\_pelican\Scripts
 set PELICAN_BINARY=%PYTHON_VENV_SCRIPTS%\pelican.exe
 set PYTHON_BINARY=%PYTHON_VENV_SCRIPTS%\python.exe
 
