@@ -6,7 +6,12 @@ AUTHOR = 'Vlad Calin'
 SITENAME = 'Vlad\'s blog'
 SITEURL = ''
 SITELOGO = "/images/profile.jpg"
+SITETITLE = "Vlad Călin"
+SITESUBTITLE = "Software developer - writing Python code for money"
 SITEDESCRIPTION = "When every morning starts with a coffee and a hello world"
+
+ROBOTS = 'index, follow'
+COPYRIGHT_YEAR = 2016
 
 PATH = 'content'
 

@@ -20,5 +20,5 @@ DELETE_OUTPUT_DIRECTORY = False
 
 # Following items are often useful when publishing
 
-#DISQUS_SITENAME = ""
+DISQUS_SITENAME = "vladcalin-github-io"
 GOOGLE_ANALYTICS = "UA-82264971-2"
