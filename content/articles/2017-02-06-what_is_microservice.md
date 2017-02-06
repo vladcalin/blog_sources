@@ -1,7 +1,7 @@
 Title: What is microservices?
 Date: 2017-02-06 15:15
 Modified: 2017-02-06 15:15
-Category: Thoughts
+Category: Microservices
 Tags: distributed, thoughts, microservice
 Authors: Vlad Calin
 
@@ -10,27 +10,28 @@ The title is a reference to the famous *"What is drugs?"* news footage that is o
 
 So, what is microservice?
 
-I am sure that you heard this term and wondered why everybody is talking about it. What is it? What is it good for? What are the alternatives?
+I am sure that you heard this term and wondered why everybody is talking about it. What is it? What is it good for? What problems does this solve?
 
-In this article I am going to write a little about this phenomenon that is supposed to change the world.
+In this article I am going to write a little about this phenomenon that is supposed to change the world (and currently does).
 
 So, what is a microservice?
 ===========================
 
-A microservice is... well... a service ... that is small... 
+A microservice is... well... a service ... that is small... and does things... and is webscale... and... whatever....
 
 Joking aside, a microservice is a stand-alone service (application) that provides simple and independent functionality for a larger system. By simple and independent functionality I want to say that it is responsible in managing a single kind of information/entities (users, subscriptions, notifications, etc) or as fewer as possible. 
 
-A larger system that is developed by using a microservice architecture can be scaled (horizontaly) more easily, can handle failiures, does not need huge investments in performant hardware.
+A larger system that is developed by using a microservice architecture is composed from a number of independent microservices that communicate with each other over the network. Such systems can be scaled (horizontaly) more easily, can handle failiures, does not need huge investments in performant hardware.
 
 With this architecture, there appear multiple problems that must be handled:
 
-- how do these services communicate with each other?
+- how do these services communicate with each other? How does this affect performance? What happens when the network fails?
 - how do these services find out about each other?
 - with multiple instances of the same service, how can I balance the load more efficiently?
-- network issues, they always appear :)
 - how do I handle security?
 - many others :(
+
+These questions are natural but they involve a broader discussion and I am not going to cover these aspects, at least not now.
 
 What is it good for?
 ====================
@@ -74,3 +75,10 @@ Latency
 
 Because each microservice runs independently, eventually on multiple nodes, they need to communicate. What in the classic monolithic architecture every communication between two "services" are simple function calls, but in the microservice architecture, every call becomes a request (be it HTTP, message over AMQP, or some custom protocol over sockets). If a service takes more than a few microseconds to respond, that response time is added to the total response time of the original request and things can become messy: requests take too much time to get a response, the whole system lags, some service invokations might timeout and if they are not handled properly, there might occur some data loss, users get bored while they wait for the system to do its job, etcetera, etcetera.
 
+
+Conclusion
+==========
+
+The microservice based architecture provides a method to develop applications that are very decoupled and can be easily scaled so that it fits our needs. But we must also be aware that this design also has flaws and, despite it advantages, we must think twice before using this pattern because it also comes with some flaws.
+
+I recommend taking a look over [microservices.io](http://microservices.io/index.html) to read some more design patterns regarding this topic.

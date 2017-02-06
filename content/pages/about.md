@@ -18,8 +18,8 @@ of random bytes). Although I am a Python fanboy, I am flexible in choosing the r
 **Favorite stuff** 
 
 I sure do enjoy spending (a lot of ) time on [Reddit](https://reddit.com) and reading about topics that are
-relevant to the current situation of the technology. I like to explore new things and think big :) . I am interested in data
-analysis, big data, cloud computing, information security and (recently) in machine learning (especially neural networks).
+relevant to the current state of the technology. I like to explore new things and think big :) . I am interested in data
+analysis, big data, distributed systems, information security and (recently) in machine learning (especially neural networks).
 
 ## Credits
 
