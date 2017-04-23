@@ -1,0 +1,3 @@
+[submodule "pelican_site/themes/nest"]
+	path = pelican_site/themes/nest
+	url = https://github.com/molivier/nest
